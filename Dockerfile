@@ -2,6 +2,9 @@
 FROM node:latest
 MAINTAINER mike.coleman@docker.com
 
+#Install Java for Jenkins
+RUN sudo apt-get install default-java
+
 # set default workdir
 WORKDIR /usr/src
 
